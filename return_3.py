@@ -7,3 +7,10 @@ def info():
     result = (total * _apple)
     grand_total = (_money - result)
     return total, grand_total
+
+def display(totalG, grand_totalG):   
+    print (f"You can buy {totalG} apples and your change is {grand_totalG:,.2f} ")
+
+total, grand_total = info()
+
+display (total, grand_total)
